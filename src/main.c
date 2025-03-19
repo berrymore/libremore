@@ -1,9 +1,9 @@
 #include <stdlib.h>
-#include <string.h>
+
 #include <libremore/allocator.h>
 
 int main(void) {
-    rem_allocator_t *allocator = rem_allocator_default();
+    rem_allocator_t *allocator = rem_allocator_std();
 
     const size_t size = 128;
     char *buffer = rem_mem_acquire(allocator, size);
