@@ -5,4 +5,8 @@
 #   define REM_STATIC_IMPL static inline
 #endif
 
+#ifndef MIN
+#   define MIN(x,y) ((x) < (y) ? (x) : (y))
+#endif
+
 #endif //REM_MACROS_H

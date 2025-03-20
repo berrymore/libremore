@@ -18,7 +18,7 @@ if (NOT CMAKE_BUILD_TYPE)
 endif ()
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-include_directories(include)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 file(GLOB_RECURSE SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/src/*.c")
 
